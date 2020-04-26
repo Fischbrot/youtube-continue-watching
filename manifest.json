@@ -7,17 +7,18 @@
   "icons": {
     "128": "icons/icon.png"
   },
-  "default_locale": "en",
-  "background": {
-    "scripts": [
-      "src/bg/background.js"
-    ],
-    "persistent": false
-  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.youtube.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
   "permissions": [
-    "*youtube*"
+    "https://*.youtube.com/*"
   ],
   "omnibox": {
-    "keyword": ""
+    "keyword": "Youtube continue watching"
   }
 }
