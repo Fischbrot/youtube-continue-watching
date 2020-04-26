@@ -1,0 +1,23 @@
+{
+  "name": "YouTube continue watching",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Disables famous 'Video Paused. Continue Watching?' - Popup from YouTube ",
+  "homepage_url": "http://fischbrot.com",
+  "icons": {
+    "128": "icons/icon.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "src/bg/background.js"
+    ],
+    "persistent": false
+  },
+  "permissions": [
+    "*youtube*"
+  ],
+  "omnibox": {
+    "keyword": ""
+  }
+}
