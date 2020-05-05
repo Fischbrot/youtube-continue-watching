@@ -3,7 +3,9 @@ function checkPopup() {
   
     if(element) {
       console.log("RESUMED YOUTUBE!")
-      document.querySelector(".yt-confirm-dialog-renderer a.yt-button-renderer").click();
+      let child = document.querySelector(".yt-confirm-dialog-renderer a.yt-button-renderer")
+      child.click();
+      element.removeChild(child)
     }
   
   }
